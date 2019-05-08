@@ -16,7 +16,9 @@ public class MorseEncoder {
   private Map<String, String> morseAlphabet;
 
   public String encode(String letter) {
+
     String lowerCase = letter.toLowerCase();
+    
     return morseAlphabet.getOrDefault(lowerCase, "Wrong");
   }
 
